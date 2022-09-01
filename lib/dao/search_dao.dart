@@ -4,6 +4,7 @@ import 'dart:convert';
 import 'package:flutter_trip/model/seach_model.dart';
 import 'package:http/http.dart' as http;
 
+// https://m.ctrip.com/restapi/h5api/globalsearch/search?source=mobileweb&action=mobileweb&keyword=长城
 ///搜索接口
 class SearchDao {
   static Future<SearchModel> fetch(String url, String text) async {

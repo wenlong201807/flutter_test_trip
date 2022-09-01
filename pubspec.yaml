@@ -44,21 +44,22 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - images/type_channelplane.png
-    - images/type_district.png
-    - images/type_food.png
-    - images/type_hotel.png
-    - images/type_huodong.png
-    - images/type_shop.png
-    - images/type_sight.png
-    - images/type_ticket.png
-    - images/type_travelgroup.png
-    - images/type_channelgroup.png
-    - images/type_channelgs.png
-    - images/type_channeltrain.png
-    - images/type_cruise.png
-    - asserts/home.json
-    - asserts/planTask.json
+    - assets/images/type_channelplane.png
+    - assets/images/type_district.png
+    - assets/images/type_food.png
+    - assets/images/type_hotel.png
+    - assets/images/type_huodong.png
+    - assets/images/type_shop.png
+    - assets/images/type_sight.png
+    - assets/images/type_ticket.png
+    - assets/images/type_travelgroup.png
+    - assets/images/type_channelgroup.png
+    - assets/images/type_channelgs.png
+    - assets/images/type_channeltrain.png
+    - assets/images/type_cruise.png
+    - assets/images/banpic1.png
+    - assets/home.json
+    - assets/planTask.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.

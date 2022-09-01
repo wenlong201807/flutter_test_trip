@@ -20,16 +20,16 @@ class myList extends StatelessWidget {
   Widget build(BuildContext context) {
     return FutureBuilder(
       //1
-      future: DefaultAssetBundle.of(context)
-          .loadString('asserts/planTask.json'), //2
+      future:
+          DefaultAssetBundle.of(context).loadString('assets/planTask.json'), //2
       builder: (context, snapshot) {
         var data = json.decode(snapshot.data.toString()); //3
         // List dataList = data['dataList'];//4
-        print(data);
+        // print(data);
         return ListView.builder(
           itemCount: data.length, //5
           itemBuilder: (context, index) {
-            print('$context $index');
+            // print('$context $index');
             return Container(
               height: 200,
               child: Column(
