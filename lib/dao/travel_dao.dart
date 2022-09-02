@@ -6,7 +6,7 @@ import 'package:http/http.dart' as http;
 
 ///旅拍页接口
 
-var Params = {
+var params = {
   "districtId": -1,
   "groupChannelCode": "RX-OMF",
   "type": null,
@@ -25,8 +25,8 @@ var Params = {
 };
 
 class TravelDao {
-  static Future<TravelItemModel> fetch(
-      String url,Map params, String groupChannelCode, int pageIndex, int pageSize) async {
+  static Future<TravelItemModel> fetch(String url, Map params,
+      String groupChannelCode, int pageIndex, int pageSize) async {
     Map paramsMap = params['pagePara'];
     paramsMap['pageIndex'] = pageIndex;
     paramsMap['pageSize'] = pageSize;
