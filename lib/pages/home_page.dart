@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
     super.initState();
     _handleRefresh();
     Future.delayed(Duration(milliseconds: 600), () {
-      FlutterSplashScreen.hide();
+      FlutterSplashScreen.hide(); // 首页入口 关闭启动屏
     });
   }
 
