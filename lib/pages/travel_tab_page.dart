@@ -26,6 +26,7 @@ class TravelTabPage extends StatefulWidget {
 
 class _TravelTabPageState extends State<TravelTabPage>
     with AutomaticKeepAliveClientMixin {
+  // 减少重复渲染，实现优化
   List<TravelItem> travelItems;
   int pageIndex = 1;
   bool _loading = true;

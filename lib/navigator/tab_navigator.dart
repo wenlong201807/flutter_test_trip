@@ -22,6 +22,7 @@ class _TabNavigatorState extends State<TabNavigator> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: PageView(
+        // 按需加载
         controller: _controller,
         children: <Widget>[
           HomePage(),
@@ -32,7 +33,7 @@ class _TabNavigatorState extends State<TabNavigator> {
           MyPage(),
           testPage(),
         ],
-        physics: NeverScrollableScrollPhysics(),
+        physics: NeverScrollableScrollPhysics(), // fix 修复 禁止页面左右滑动
       ),
       bottomNavigationBar: BottomNavigationBar(
           currentIndex: _currentIndex,
@@ -42,7 +43,7 @@ class _TabNavigatorState extends State<TabNavigator> {
               _currentIndex = index;
             });
           },
-          type: BottomNavigationBarType.fixed,
+          type: BottomNavigationBarType.fixed, // 自定义底部tab个数
           items: [
             _bottomItem('首页', Icons.home, 0),
             _bottomItem('搜索', Icons.search, 1),
